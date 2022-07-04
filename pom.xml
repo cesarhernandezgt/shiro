@@ -612,15 +612,12 @@
                 <configuration>
                     <!-- do not update upstream, with a pending release. -->
                     <pushChanges>false</pushChanges>
-                    <localCheckout>true</localCheckout>
-                    <!-- "install" needed because we have interrelated dependencies between the modules and we are releasing them all the same - especially consider shiro-all -->
-                    <preparationGoals>clean apache-rat:check install</preparationGoals>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <!-- This configuration copied from apache:apache:7 parent pom -->
-                    <useReleaseProfile>false</useReleaseProfile>
-                    <goals>deploy site site:stage</goals>
-                    <arguments>-Pdocs,apache-release</arguments>
-                    <mavenExecutorId>forked-path</mavenExecutorId>
+		    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <allowTimestampedSnapshots>false</allowTimestampedSnapshots>
+                    <preparationGoals>clean install</preparationGoals>
+                    <goals>deploy</goals>
+                    <remoteTagging>false</remoteTagging>
+                    <suppressCommitBeforeTag>false</suppressCommitBeforeTag>
                 </configuration>
             </plugin>
             <plugin>
