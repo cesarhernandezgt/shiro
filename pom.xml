@@ -612,6 +612,7 @@
                 <configuration>
                     <!-- do not update upstream, with a pending release. -->
                     <pushChanges>false</pushChanges>
+		    <localCheckout>true</localCheckout>	
 		    <autoVersionSubmodules>true</autoVersionSubmodules>
                     <allowTimestampedSnapshots>false</allowTimestampedSnapshots>
                     <preparationGoals>clean install</preparationGoals>
