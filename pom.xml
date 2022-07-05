@@ -30,7 +30,7 @@
     <groupId>org.apache.shiro</groupId>
     <artifactId>shiro-root</artifactId>
     <packaging>pom</packaging>
-    <version>1.7.2-TT.1</version>
+    <version>1.7.2-TT.2-SNAPSHOT</version>
 
     <name>Apache Shiro</name>
     <url>https://shiro.apache.org/</url>
@@ -44,7 +44,7 @@
         <connection>scm:git:git@github.com:tomitribe/shiro.git</connection>
         <developerConnection>scm:git:git@github.com:tomitribe/shiro.git</developerConnection>
         <url>git@github.com:tomitribe/shiro-git</url>
-        <tag>shiro-1.7.2-TT.1</tag>
+        <tag>HEAD</tag>
     </scm>
     <issueManagement>
         <system>Jira</system>
