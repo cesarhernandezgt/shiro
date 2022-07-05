@@ -621,7 +621,7 @@
                     <suppressCommitBeforeTag>false</suppressCommitBeforeTag>
                 </configuration>
             </plugin>
-            <plugin>
+<!--             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.8</version>
@@ -630,7 +630,7 @@
                     <nexusUrl>https://repository.apache.org</nexusUrl>
                     <serverId>apache.releases.https</serverId>
                 </configuration>
-            </plugin>
+            </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
