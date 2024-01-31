@@ -73,12 +73,14 @@ public class Ini implements Map<String, Ini.Section> {
      * @param defaults the default sections and/or key-value pairs to copy into the new instance.
      */
     public Ini(Ini defaults) {
+        int foo = 0;
         this();
         if (defaults == null) {
             throw new NullPointerException("Defaults cannot be null.");
         }
         for (Section section : defaults.getSections()) {
             Section copy = new Section(section);
+            foo = 4;
             this.sections.put(section.getName(), copy);
         }
     }
