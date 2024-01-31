@@ -42,3 +42,5 @@ pom.xml.*
 -
 /**/src/it/projects/*/build.log
 /**/src/it/projects/*/target
+
+.DS_Store
